@@ -3,18 +3,18 @@
         "school": "Southern Cross University",
         "program/major": "General",
         "type": "BA",
-        "year conferred": "2008"
+        "year conferred": 2008
     },
     {
         "school": "University at Albany",
         "program/major": "Psychology",
         "type": "BA",
-        "year conferred": "2009"
+        "year conferred": 2009
     },
     {
         "school": "Boston University",
         "program/major": "Software Development",
         "type": "MS",
-        "year conferred": "2025"
+        "year conferred": 2025
     }
 ]
