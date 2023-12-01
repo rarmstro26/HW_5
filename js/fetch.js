@@ -27,10 +27,8 @@ function getData() {
         .then(data => {
             console.log(data);
             // Processing JSON data - convert JSON to string
-            // let dataString = JSON.stringify(data);
-
+    
             // Send (all) converted JSON text to DOM element to display
-            // display.innerText = dataString;
 
             // Loop through the array of objects
             data.forEach(entry => {
@@ -40,9 +38,11 @@ function getData() {
 
                 // Access and assign values within each object entry
                 let school = entry.school;
-                let programMajor = entry['program/major'];
+                // Updated JSON keys to account for special characters using dot notation
+                let programMajor = entry.program_major;
                 let type = entry.type;
-                let yearConferred = entry['year conferred'];
+                // Updated JSON keys to account for special characters using dot notation
+                let yearConferred = entry.year_conferred;
 
                 // Display properties to the DOM using innerHTML and template literals to assign values
                 display.innerHTML += `<p>School: ${school}</p>`;
