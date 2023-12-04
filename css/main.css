@@ -1,14 +1,12 @@
 #page-header {
     display: flex;
     flex-direction: column;
-    
     margin: 0;
     /* height: 65px; */
     padding: 10px;
-    
     background-color: cadetblue;
     font-family: Merriweather;
-    color:#112D32;
+    color: #112D32;
     font-weight: bolder;
     text-align: center;
 }
@@ -16,11 +14,10 @@
 #main-button {
     /* margin-left: 10%; */
     font-size: 18px;
-
     border-radius: 5px;
     border-color: #25274D;
     cursor: pointer;
-    font-family:Merriweather;
+    font-family: Merriweather;
     display: block;
     margin-top: 36px;
     margin-left: auto;
@@ -42,7 +39,6 @@ p {
 
 /* TABLE FORMAT */
 #table-header {
-    
     font-size: 26px;
     padding-bottom: 8px;
     text-align: center;
@@ -63,14 +59,15 @@ table {
 
 }
 
-  td, th{
+td,
+th {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
-  }
-    
-    table tr:nth-child(even){
-        background-color: #f2f0f0;
-    }
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f0f0;
+}
