@@ -6,37 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
-
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- Link to fetch JS controller file -->
+    <script defer src="./js/fetch2.js"></script>
     <title>Fetch JSON Data</title>
 </head>
 
 <body>
 
-    <h1>Education Data</h1>
+    <h1 id="page-header">Education Data</h1>
 
     <!-- Setup button to begin fetch for education data in JSON -->
-    <button id="main-button" type="button"> Click here to view</button>
+    <button id="main-button" type="button">Populate Table</button>
 
     <!-- Setup DOM element to display resulting education data -->
     <p id="display-education"></p>
 
-    <!-- <table id="education-table">
-        <caption>EDUCATION DATA TABLE</caption><br>
-            <thead>
-                <tr>
-                    <th>SCHOOL</th>
-                    <th>PROGRAM</th>
-                    <th>TYPE</th>
-                    <th>YEAR CONFERRED</th>
-                </tr>
-            </thead>
-            <tbody>
+    <table id="education-table">
+        <caption id="table-header">EDUCATION DATA TABLE</caption><br>
+        <thead id="table-head-row">
+            <tr>
+                <!-- Define table header -->
+                <th>SCHOOL</th>
+                <th>PROGRAM</th>
+                <th>TYPE</th>
+                <th>YEAR CONFERRED</th>
+            </tr>
+        </thead>
+        <tbody id="education-table-body">
+            <!-- Insert table body from JSON data -->
+        </tbody>
+    </table>
 
-            </tbody>
-    </table> -->
-
-    <!-- Link to fetch JS controller file -->
-    <script src="./js/fetch.js"></script>
+    
 </body>
 
 </html>

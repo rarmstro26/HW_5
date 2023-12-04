@@ -1,4 +1,5 @@
 
+// URL to hosted JSON file from part 1 with education data
 const url = "https://rarmstro26.github.io/HW_5/models/education.json"
 
 // Wait for window load - setup click here button to launch fetch function
@@ -13,22 +14,19 @@ function getData() {
     // alert("Function started!");
     console.log("Function started");
 
-    // Initiate GET to hosted json URL
+    // Initiate GET via fetch to hosted JSON url
     fetch(url)
         // Handle the response from fetch request
         .then((response) => {
-            // Display response status to console
             console.log(response.status);
-            alert("Fetch returned status code = " + response.status);
-            // Return parsed JSON data
+            // Display response status to alert
+            alert(`Fetch returned status code = ${response.status}`);
+            // Return parsed JSON data from response
             return response.json();
         })
         //  Process the returned JSON data and display to DOM
         .then(data => {
             console.log(data);
-            // Processing JSON data - convert JSON to string
-    
-            // Send (all) converted JSON text to DOM element to display
 
             // Loop through the array of objects
             data.forEach(entry => {
@@ -52,19 +50,11 @@ function getData() {
                 // Add horizontal rule for clarity
                 display.innerHTML += '<hr>';
             });
-
         })
-        // Catch any errors from fetch
+        // Catch any errors encountered during fetch
         .catch((err) => {
             console.log("Error with fetch: " + err);
+            alert(`Error with fetch ${err}`);
         });
-
-    // Create a fetch request to return a promise
-
-    // Resolve the promise using the Response class
-
-    // Check the status code of the response
-
-    // Process the returned JSON data using JS (DOM)
 
 }

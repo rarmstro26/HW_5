@@ -1,5 +1,14 @@
-h1 {
+#page-header {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+    /* height: 65px; */
+    padding: 10px;
+    
+    background-color: cadetblue;
     font-family: Merriweather;
+    color:#112D32;
     font-weight: bolder;
     text-align: center;
 }
@@ -7,17 +16,23 @@ h1 {
 #main-button {
     /* margin-left: 10%; */
     font-size: 18px;
+
     border-radius: 5px;
     border-color: #25274D;
     cursor: pointer;
     font-family:Merriweather;
     display: block;
+    margin-top: 36px;
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
+
+#main-button:hover {
+    background-color: rgb(225, 223, 223);
+}
+
 p {
     font-family: Merriweather;
     font-size: 14px;
@@ -25,3 +40,37 @@ p {
     padding-top: 6px;
 }
 
+/* TABLE FORMAT */
+#table-header {
+    
+    font-size: 26px;
+    padding-bottom: 8px;
+    text-align: center;
+
+}
+
+#table-head-row {
+    background-color: cadetblue;
+    color: #ffff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 85%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+  td, th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+    
+    table tr:nth-child(even){
+        background-color: #f2f0f0;
+    }
